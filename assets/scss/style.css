@@ -23,6 +23,21 @@ img {
   max-width: 300px;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  display: flex;
+  flex: 2;
+  flex-wrap: wrap;
+}
+
 .red-background {
   background-color: red;
 }
