@@ -9,4 +9,8 @@ h2 {
   font-family: "Shrikhand", sans-serif;
 }
 
+img {
+  max-width: 300px;
+}
+
 /*# sourceMappingURL=style.css.map */
