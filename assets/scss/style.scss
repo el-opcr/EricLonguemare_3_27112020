@@ -1,6 +1,6 @@
 body {
-  margin: auto;
   max-width: 1440px;
+  margin: auto;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -20,5 +20,55 @@ a {
 }
 
 img {
-  max-width: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-centered {
+  align-content: center;
+  justify-content: center;
+}
+
+.red-background {
+  background-color: red;
+}
+
+.grey-background {
+  background-color: #f6f6f6;
+}
+
+.dark-background {
+  background-color: #353535;
+}
+
+.white-font {
+  color: white;
+}
+
+.card-desk > a {
+  margin: 10px;
+  background-color: coral;
+}
+
+.card-desk > a > img {
+  width: 100%;
+  min-width: 334px;
+  height: 174px;
+  background-color: blueviolet;
 }
