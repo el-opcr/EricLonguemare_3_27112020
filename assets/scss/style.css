@@ -1,3 +1,4 @@
+@import "../../node_modules/normalize.css/normalize.css";
 body {
   max-width: 1440px;
   margin: auto;
@@ -7,6 +8,10 @@ body {
 h1,
 .font-shrikhand {
   font-family: "Shrikhand", sans-serif;
+}
+
+header h1 {
+  margin: 0 auto 0;
 }
 
 ul {
