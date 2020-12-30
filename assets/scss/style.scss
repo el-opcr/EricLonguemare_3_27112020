@@ -1,6 +1,6 @@
 body {
-  margin: auto;
   max-width: 1440px;
+  margin: auto;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -20,11 +20,15 @@ a {
 }
 
 img {
-  max-width: 300px;
+  object-fit: cover;
+  width: 100%;
 }
 
-main {
+.flex {
   display: flex;
+}
+
+.flex-wrap {
   flex-wrap: wrap;
 }
 
@@ -33,11 +37,26 @@ main {
 }
 
 .flex-2 {
-  display: flex;
   flex: 2;
-  flex-wrap: wrap;
+}
+
+.flex-centered {
+  align-content: center;
+  justify-content: center;
 }
 
 .red-background {
   background-color: red;
+}
+
+.card-desk > a {
+  margin: 10px;
+  background-color: coral;
+}
+
+.card-desk > a > img {
+  width: 100%;
+  min-width: 334px;
+  height: 174px;
+  background-color: blueviolet;
 }
