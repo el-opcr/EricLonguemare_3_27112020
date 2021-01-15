@@ -11,6 +11,7 @@ h1,
 }
 
 header h1 {
+  height: 60px;
   margin: 0 auto 0;
 }
 
@@ -46,7 +47,7 @@ img {
 }
 
 .flex-centered {
-  align-content: center;
+  align-items: center;
   justify-content: center;
 }
 
