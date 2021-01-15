@@ -4,8 +4,8 @@
   "description": "ohmyfood",
   "scripts": {
     "sass-only": "node_modules/.bin/sass --watch --update ./src/scss/style.scss:./assets/css/style.css",
-    "dev": "parcel index.html",
-    "build": "parcel build --public-url . index.html"
+    "dev": "parcel src/index.html",
+    "build": "parcel build --public-url . src/index.html"
   },
   "repository": {
     "type": "git",
