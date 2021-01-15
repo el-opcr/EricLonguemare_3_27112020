@@ -1,18 +1,21 @@
-@import "normalize.css";
+@import "vendors/normalize";
+
 body {
   max-width: 1440px;
   margin: auto;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,
 .font-shrikhand {
-  font-family: "Shrikhand", sans-serif;
+  font-family: 'Shrikhand', sans-serif;
 }
 
-header h1 {
-  height: 60px;
-  margin: 0 auto 0;
+header {
+  h1 {
+    height: 60px;
+    margin: 0 auto 0;
+  }
 }
 
 ul {
@@ -79,4 +82,4 @@ img {
   background-color: blueviolet;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* test2 eric lulu rrrr test */
