@@ -2,9 +2,10 @@
   "name": "ohmyfood",
   "version": "0.0.2",
   "description": "ohmyfood",
-  "main": "index.html",
   "scripts": {
-    "dev": "node_modules/.bin/sass --watch --update ./src/scss/style.scss:./assets/css/style.css"
+    "sass-only": "node_modules/.bin/sass --watch --update ./src/scss/style.scss:./assets/css/style.css",
+    "dev": "parcel index.html",
+    "build": "parcel build --public-url . index.html"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/el-opcr/EricLonguemare_3_27112020#readme",
   "devDependencies": {
-    "sass": "^1.32.4"
+    "sass": "^1.32.4",
+    "parcel": "^2.0.0-beta.1"
   }
 }
