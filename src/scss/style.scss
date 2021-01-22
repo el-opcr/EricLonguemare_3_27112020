@@ -1,4 +1,15 @@
-@import "vendors/normalize";
+@import "utils/variables";
+@import "vendors/csstools/normalize";
+
+/* https://fontawesome.com/how-to-use/on-the-web/using-with/sass */
+
+/* https://github.com/parcel-bundler/parcel/issues/540
+use parcel bundler notation and not webpack one.
+*/
+
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/regular";
 
 body {
   max-width: 1440px;
