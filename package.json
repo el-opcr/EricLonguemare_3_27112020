@@ -5,7 +5,7 @@
   "scripts": {
     "sass-only": "node_modules/.bin/sass --watch --update ./src/scss/style.scss:./assets/css/style.css",
     "dev": "parcel src/index.html",
-    "build": "parcel build --public-url . src/index.html",
+    "build": "parcel build --public-url . src/index.html --no-source-maps --no-minify",
     "prebuild": "rm -rf dist"
   },
   "repository": {
