@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/el-opcr/EricLonguemare_3_27112020/issues"
   },
-  "homepage": "https://github.com/el-opcr/EricLonguemare_3_27112020#readme",
+  "homepage": "https://github.com/el-opcr/EricLonguemare_3_27112020/dist",
   "devDependencies": {
     "sass": "^1.32.4",
     "parcel": "^2.0.0-beta.1"
