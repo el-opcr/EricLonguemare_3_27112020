@@ -21,6 +21,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "parcel": "^2.0.0-beta.1",
-    "sass": "^1.32.4"
+    "sass": "^1.32.4",
+    "sharp": "^0.27.0"
   }
 }
