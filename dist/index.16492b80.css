@@ -5023,6 +5023,9 @@ img {
 .grey-background {
   background-color: #f6f6f6;
 }
+.dark-grey-background {
+  background-color: #eaeaea;
+}
 .dark-background {
   background-color: #353535;
 }
@@ -5031,12 +5034,24 @@ img {
 }
 .card-desk > a {
   margin: 10px;
-  background-color: coral;
 }
 .card-desk > a > img {
   width: 100%;
   min-width: 334px;
   height: 174px;
-  background-color: blueviolet;
 }
-/* test2 eric test */
+.text-size-2 {
+  font-size: 2em;
+}
+.text-size-15 {
+  font-size: 1.5em;
+}
+.text-bold {
+  font-weight: bolder;
+}
+.text-center {
+  text-align: center;
+}
+.line-height-25 {
+  line-height: 2.5em;
+}
