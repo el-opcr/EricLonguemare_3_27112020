@@ -24,7 +24,7 @@ h1,
 
 header {
   h1 {
-    height: 60px;
+    height: 2em;
     margin: 0 auto 0;
   }
 }
@@ -48,8 +48,17 @@ img {
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-centered {
+  align-items: center;
+  justify-content: center;
 }
 
 .flex-1 {
@@ -60,9 +69,16 @@ img {
   flex: 2;
 }
 
-.flex-centered {
-  align-items: center;
-  justify-content: center;
+.gap-05 {
+  gap: 0.5em;
+}
+
+.gap-2 {
+  gap: 2em;
+}
+
+.padding-2 {
+  padding: 2em;
 }
 
 .red-background {
@@ -97,17 +113,24 @@ picture > img {
   width: 100%;
   min-width: 334px;
   height: 174px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
-.text-size-2 {
-  font-size: 2em;
+.card {
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.08);
+}
+
+.text-size-14 {
+  font-size: 1.4em;
 }
 
 .text-size-15 {
   font-size: 1.5em;
 }
 
-.text-bold {
+.text-bolder {
   font-weight: bolder;
 }
 
@@ -115,6 +138,10 @@ picture > img {
   text-align: center;
 }
 
-.line-height-25 {
-  line-height: 2.5em;
+.text-lighter {
+  font-weight: lighter;
+}
+
+.line-height-3 {
+  line-height: 3em;
 }
