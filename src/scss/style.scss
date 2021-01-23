@@ -89,6 +89,10 @@ img {
   margin: 10px;
 }
 
+picture > img {
+  max-height: 300px;
+}
+
 .card-desk > a > img {
   width: 100%;
   min-width: 334px;
