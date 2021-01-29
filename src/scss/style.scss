@@ -23,9 +23,20 @@ h1,
 }
 
 header {
-  h1 {
+  > h1 {
     height: 2em;
     margin: 0 auto 0;
+  }
+
+  > div {
+    > a {
+      margin-left: 0.75em;
+    }
+
+    > h1 {
+      height: 2em;
+      margin: 0 auto 0;
+    }
   }
 }
 
