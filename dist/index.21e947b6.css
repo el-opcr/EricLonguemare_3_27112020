@@ -4985,7 +4985,14 @@ h1,
 .font-shrikhand {
   font-family: "Shrikhand", sans-serif;
 }
-header h1 {
+header > h1 {
+  height: 2em;
+  margin: 0 auto 0;
+}
+header > div > a {
+  margin-left: 0.75em;
+}
+header > div > h1 {
   height: 2em;
   margin: 0 auto 0;
 }
