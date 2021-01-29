@@ -61,12 +61,20 @@ img {
   justify-content: center;
 }
 
+.flex-centered-vertical {
+  align-items: center;
+}
+
 .flex-1 {
   flex: 1;
 }
 
 .flex-2 {
   flex: 2;
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
 }
 
 .gap-05 {
@@ -81,12 +89,16 @@ img {
   padding: 2em;
 }
 
+.margin-top-2 {
+  margin-top: 2em;
+}
+
 .red-background {
   background-color: red;
 }
 
 .grey-background {
-  background-color: #f6f6f6;
+  background-color: $colour-light-grey;
 }
 
 .dark-grey-background {
@@ -119,7 +131,12 @@ picture > img {
 
 .card {
   border-radius: 5%;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.08);
+}
+
+.fa-heart:hover {
+  background: linear-gradient(to bottom, $colour-purple 0%, $colour-pink 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text-size-14 {
@@ -144,4 +161,40 @@ picture > img {
 
 .line-height-3 {
   line-height: 3em;
+}
+
+.shadow {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.08)
+}
+
+.button {
+  &-explore {
+    width: 200px;
+    height: 50px;
+    background-image: linear-gradient(to bottom, $colour-pink 0%, $colour-purple 100%);
+    border-radius: 25px;
+  }
+  &-process {
+    width: 325px;
+    height: 75px;
+    margin: 0.5em;
+    border-radius: 20px;
+    &:hover {
+      background: rgba($colour-purple, 0.1);
+
+      .text-purple {
+        color: $colour-purple;
+      }
+    }
+    &__round-purple-background {
+      width: 26px;
+      height: 26px;
+      margin-left: -13px;
+      background-color: $colour-purple;
+      border-radius: 50%;
+    }
+    &__icon {
+      width: 50px;
+    }
+  }
 }
