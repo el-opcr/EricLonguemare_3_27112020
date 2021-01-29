@@ -5014,11 +5014,17 @@ img {
   align-items: center;
   justify-content: center;
 }
+.flex-centered-vertical {
+  align-items: center;
+}
 .flex-1 {
   flex: 1;
 }
 .flex-2 {
   flex: 2;
+}
+.flex-grow-2 {
+  flex-grow: 2;
 }
 .gap-05 {
   gap: 0.5em;
@@ -5028,6 +5034,9 @@ img {
 }
 .padding-2 {
   padding: 2em;
+}
+.margin-top-2 {
+  margin-top: 2em;
 }
 .red-background {
   background-color: red;
@@ -5059,7 +5068,11 @@ picture > img {
 }
 .card {
   border-radius: 5%;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.08);
+}
+.fa-heart:hover {
+  background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .text-size-14 {
   font-size: 1.4em;
@@ -5078,4 +5091,35 @@ picture > img {
 }
 .line-height-3 {
   line-height: 3em;
+}
+.shadow {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.08);
+}
+.button-explore {
+  width: 200px;
+  height: 50px;
+  background-image: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
+  border-radius: 25px;
+}
+.button-process {
+  width: 325px;
+  height: 75px;
+  margin: 0.5em;
+  border-radius: 20px;
+}
+.button-process:hover {
+  background: rgba(147, 86, 220, 0.1);
+}
+.button-process:hover .text-purple {
+  color: #9356dc;
+}
+.button-process__round-purple-background {
+  width: 26px;
+  height: 26px;
+  margin-left: -13px;
+  background-color: #9356dc;
+  border-radius: 50%;
+}
+.button-process__icon {
+  width: 50px;
 }
