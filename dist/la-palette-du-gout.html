@@ -6,7 +6,7 @@
   <title>ohmyfood | Paris, Belleville | La palette du goût</title>
   <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="index.21e947b6.css" rel="stylesheet">
+  <link href="index.2f62dd62.css" rel="stylesheet">
   <meta content="Restaurants à proximité de Paris, Belleville : la palette du goût" name="description">
 </head>
 <body>
@@ -23,71 +23,97 @@
     <source media="(min-width: 1281px)" srcset="jay-wennington-N_Y88TWmGwA-unsplash.jpg.e8d05c12.webp">
     <img src="jay-wennington-N_Y88TWmGwA-unsplash.jpg.e8d05c12.webp" alt="assiette la palette du goût">
   </picture>
-  <h2 class="font-shrikhand">La palette du goût <i class="far fa-heart"></i></h2>
+  <div class="flex">
+    <h2 class="font-shrikhand">La palette du goût</h2>
+    <span class="fa-stack">
+              <i class="far fa-heart fa-stack-1x to-hide"></i>
+              <i class="fa fa-heart fa-stack-1x fa-inverse to-show"></i>
+            </span>
+  </div>
 </header>
 <main class="flex flex-wrap">
   <section>
     <h3>ENTRÉES</h3>
-    <div>
+    <div class="flex flex-column card shadow">
       <h4>Fricassée d'escargot</h4>
-      <p>Au piment d'Espelette</p>
-      <p>25€</p>
+      <div class="flex">
+        <p>Au piment d'Espelette</p>
+        <p>25€</p>
+      </div>
     </div>
-    <div>
+    <div class="flex flex-column card shadow">
       <h4>Foie gras de canard mi-cuit</h4>
-      <p>Et ses copeaux de truffe noire</p>
-      <p>35€</p>
+      <div class="flex">
+        <p>Et ses copeaux de truffe noire</p>
+        <p>35€</p>
+      </div>
     </div>
-    <div>
+    <div class="flex flex-column card shadow">
       <h4>Oeuf au plat</h4>
-      <p>Assaisonné à la truffe sur lit de caviar</p>
-      <p>20€</p>
-      <p><i class="far fa-check-circle"></i></p>
+      <div class="flex">
+        <p>Assaisonné à la truffe sur lit de caviar</p>
+        <p>20€</p>
+        <p><i class="far fa-check-circle"></i></p>
+      </div>
     </div>
   </section>
   <section>
     <h3>PLATS</h3>
-    <div>
+    <div class="flex flex-column card shadow">
       <h4>Filet de boeuf aux herbes</h4>
-      <p>Accompagné de sa ribambelle de légumes</p>
-      <p>40€</p>
+      <div class="flex">
+        <p>Accompagné de sa ribambelle de légumes</p>
+        <p>40€</p>
+      </div>
     </div>
-    <div>
+    <div class="flex flex-column card shadow">
       <h4>Parmentier de queue de boeuf</h4>
-      <p>À la truffe noire sur sa purée de panais</p>
-      <p>35€</p>
+      <div class="flex">
+        <p>À la truffe noire sur sa purée de panais</p>
+        <p>35€</p>
+      </div>
     </div>
-    <div>
+    <div class="flex flex-column card shadow">
       <h4>Filet de Turbot</h4>
-      <p>Aux agrumes</p>
-      <p>44€</p>
+      <div class="flex">
+        <p>Aux agrumes</p>
+        <p>44€</p>
+      </div>
     </div>
   </section>
   <section>
     <h3>DESSERTS</h3>
-    <div>
+    <div class="flex flex-column card shadow">
       <h4>Paris-Brest</h4>
-      <p>Revisité</p>
-      <p>18€</p>
+      <div class="flex">
+        <p>Revisité</p>
+        <p>18€</p>
+      </div>
     </div>
-    <div>
+    <div class="flex flex-column card shadow">
       <h4>Macaron au chocolat d'exception</h4>
-      <p>Et glace à la vanille de Madagascar</p>
-      <p>22€</p>
+      <div class="flex">
+        <p>Et glace à la vanille de Madagascar</p>
+        <p>22€</p>
+      </div>
     </div>
-    <div>
+    <div class="flex flex-column card shadow">
       <h4>Mousse au chocolat</h4>
-      <p>Au piment d'Espelette et à la truffe noire</p>
-      <p>23€</p>
+      <div class="flex">
+        <p>Au piment d'Espelette et à la truffe noire</p>
+        <p>23€</p>
+      </div>
     </div>
   </section>
-  <button>Commander</button>
+  <button class="btn-cta text-bolder text-white shadow">Commander</button>
 </main>
 <footer class="ft dark-background text-white">
   <ul class="flex flex-column gap-05">
     <li class="font-shrikhand margin-bottom-1">ohmyfood</li>
-    <li><a class="flex text-white text-bolder" href="#"><i class="fas fa-utensils ft__icon"></i> Proposer un restaurant</a></li>
-    <li><a class="flex text-white text-bolder" href="#"><i class="fas fa-hands-helping ft__icon"></i> Devenir partenaire</a></li>
+    <li><a class="flex text-white text-bolder" href="#"><i class="fas fa-utensils ft__icon"></i> Proposer un restaurant</a>
+    </li>
+    <li><a class="flex text-white text-bolder" href="#"><i class="fas fa-hands-helping ft__icon"></i> Devenir partenaire</a>
+    </li>
     <li><a class="text-white" href="#">Mentions légales</a></li>
     <li><a class="text-white" href="mailto:contact@ohmyfood.com">Contact</a></li>
   </ul>

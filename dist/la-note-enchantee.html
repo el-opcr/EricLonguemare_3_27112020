@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="index.21e947b6.css" rel="stylesheet">
+  <link href="index.2f62dd62.css" rel="stylesheet">
   <meta content="Restaurants à proximité de Paris, Belleville : La note enchantée" name="description">
 </head>
 <body>
@@ -23,7 +23,13 @@
     <source media="(min-width: 1281px)" srcset="stil-u2Lp8tXIcjw-unsplash.jpg.25ca20d5.webp">
     <img src="stil-u2Lp8tXIcjw-unsplash.jpg.25ca20d5.webp" alt="assiette la palette du goût">
   </picture>
-  <h2 class="font-shrikhand">La note enchantée <i class="far fa-heart"></i></h2>
+  <div class="flex">
+    <h2 class="font-shrikhand">La note enchantée</h2>
+    <span class="fa-stack">
+              <i class="far fa-heart fa-stack-1x to-hide"></i>
+              <i class="fa fa-heart fa-stack-1x fa-inverse to-show"></i>
+            </span>
+  </div>
 </header>
 <main class="flex flex-wrap">
   <section>
@@ -86,13 +92,15 @@
       <p>23€</p>
     </div>
   </section>
-  <button>Commander</button>
+  <button class="btn-cta text-bolder text-white shadow">Commander</button>
 </main>
 <footer class="ft dark-background text-white">
   <ul class="flex flex-column gap-05">
     <li class="font-shrikhand margin-bottom-1">ohmyfood</li>
-    <li><a class="flex text-white text-bolder" href="#"><i class="fas fa-utensils ft__icon"></i> Proposer un restaurant</a></li>
-    <li><a class="flex text-white text-bolder" href="#"><i class="fas fa-hands-helping ft__icon"></i> Devenir partenaire</a></li>
+    <li><a class="flex text-white text-bolder" href="#"><i class="fas fa-utensils ft__icon"></i> Proposer un restaurant</a>
+    </li>
+    <li><a class="flex text-white text-bolder" href="#"><i class="fas fa-hands-helping ft__icon"></i> Devenir partenaire</a>
+    </li>
     <li><a class="text-white" href="#">Mentions légales</a></li>
     <li><a class="text-white" href="mailto:contact@ohmyfood.com">Contact</a></li>
   </ul>

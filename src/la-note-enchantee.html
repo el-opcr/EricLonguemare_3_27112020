@@ -27,7 +27,13 @@
     <source media="(min-width: 1281px)" srcset="url:./assets/pictures/stil-u2Lp8tXIcjw-unsplash.jpg.webp?width=1440">
     <img src="url:./assets/pictures/stil-u2Lp8tXIcjw-unsplash.jpg.webp?width=1440" alt="assiette la palette du goût">
   </picture>
-  <h2 class="font-shrikhand">La note enchantée <i class="far fa-heart"></i></h2>
+  <div class="flex">
+    <h2 class="font-shrikhand">La note enchantée</h2>
+    <span class="fa-stack">
+              <i class="far fa-heart fa-stack-1x to-hide"></i>
+              <i class="fa fa-heart fa-stack-1x fa-inverse to-show"></i>
+            </span>
+  </div>
 </header>
 <main class="flex flex-wrap">
   <section>
@@ -90,13 +96,15 @@
       <p>23€</p>
     </div>
   </section>
-  <button>Commander</button>
+  <button class="btn-cta text-bolder text-white shadow">Commander</button>
 </main>
 <footer class="ft dark-background text-white">
   <ul class="flex flex-column gap-05">
     <li class="font-shrikhand margin-bottom-1">ohmyfood</li>
-    <li><a class="flex text-white text-bolder" href="#"><i class="fas fa-utensils ft__icon"></i> Proposer un restaurant</a></li>
-    <li><a class="flex text-white text-bolder" href="#"><i class="fas fa-hands-helping ft__icon"></i> Devenir partenaire</a></li>
+    <li><a class="flex text-white text-bolder" href="#"><i class="fas fa-utensils ft__icon"></i> Proposer un restaurant</a>
+    </li>
+    <li><a class="flex text-white text-bolder" href="#"><i class="fas fa-hands-helping ft__icon"></i> Devenir partenaire</a>
+    </li>
     <li><a class="text-white" href="#">Mentions légales</a></li>
     <li><a class="text-white" href="mailto:contact@ohmyfood.com">Contact</a></li>
   </ul>
