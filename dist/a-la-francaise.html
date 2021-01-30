@@ -6,7 +6,7 @@
   <title>ohmyfood | Paris, Belleville | À la française</title>
   <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="index.37129435.css" rel="stylesheet">
+  <link href="index.2f62dd62.css" rel="stylesheet">
   <meta content="Restaurants à proximité de Paris, Belleville : À la française" name="description">
 </head>
 <body>
@@ -23,7 +23,13 @@
     <source media="(min-width: 1281px)" srcset="toa-heftiba-DQKerTsQwi0-unsplash.jpg.e3ef9aee.webp">
     <img src="toa-heftiba-DQKerTsQwi0-unsplash.jpg.e3ef9aee.webp" alt="assiette la palette du goût">
   </picture>
-  <h2 class="font-shrikhand">À la française <i class="far fa-heart"></i></h2>
+  <div class="flex">
+    <h2 class="font-shrikhand">À la française</h2>
+    <span class="fa-stack">
+              <i class="far fa-heart fa-stack-1x to-hide"></i>
+              <i class="fa fa-heart fa-stack-1x fa-inverse to-show"></i>
+            </span>
+  </div>
 </header>
 <main class="flex flex-wrap">
   <section>
@@ -86,8 +92,10 @@
 <footer class="ft dark-background text-white">
   <ul class="flex flex-column gap-05">
     <li class="font-shrikhand margin-bottom-1">ohmyfood</li>
-    <li><a class="flex text-white text-bolder" href="#"><i class="fas fa-utensils ft__icon"></i> Proposer un restaurant</a></li>
-    <li><a class="flex text-white text-bolder" href="#"><i class="fas fa-hands-helping ft__icon"></i> Devenir partenaire</a></li>
+    <li><a class="flex text-white text-bolder" href="#"><i class="fas fa-utensils ft__icon"></i> Proposer un restaurant</a>
+    </li>
+    <li><a class="flex text-white text-bolder" href="#"><i class="fas fa-hands-helping ft__icon"></i> Devenir partenaire</a>
+    </li>
     <li><a class="text-white" href="#">Mentions légales</a></li>
     <li><a class="text-white" href="mailto:contact@ohmyfood.com">Contact</a></li>
   </ul>

@@ -373,6 +373,9 @@ template {
 /* https://github.com/parcel-bundler/parcel/issues/540
 use parcel bundler notation and not webpack one.
 */
+/*
+https://youtrack.jetbrains.com/issue/WEB-26130
+ */
 /*!
  * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -4981,6 +4984,10 @@ body {
   margin: auto;
   font-family: "Roboto", sans-serif;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
 h1,
 .font-shrikhand {
   font-family: "Shrikhand", sans-serif;
@@ -5010,10 +5017,6 @@ main p {
 ul {
   padding: 0;
   list-style-type: none;
-}
-a {
-  color: black;
-  text-decoration: none;
 }
 button {
   border: 0;
@@ -5090,10 +5093,14 @@ picture > img {
 .card {
   border-radius: 5%;
 }
-.fa-heart:hover {
+.fa-heart.to-show:hover {
+  font-size: 1.34em;
   background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.fa-heart.to-hide {
+  font-size: 1.33em;
 }
 .text-size-14 {
   font-size: 1.4em;
