@@ -291,6 +291,7 @@ picture {
 }
 
 .may-be-truncated {
+  width: 290px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
