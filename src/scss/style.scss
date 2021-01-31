@@ -170,6 +170,11 @@ picture {
   border-radius: 5%;
 }
 
+.card-menu {
+  width: 334px;
+  border-radius: 5%;
+}
+
 .fa-heart {
   &.to-show {
     &:hover {
@@ -283,4 +288,14 @@ picture {
   margin-top: -50px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+}
+
+.may-be-truncated {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.self-flex-end {
+  align-self: flex-end;
 }
