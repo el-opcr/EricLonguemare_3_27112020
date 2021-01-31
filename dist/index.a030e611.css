@@ -5003,14 +5003,14 @@ header > div > h1 {
   height: 2em;
   margin: 0 auto 0;
 }
-main h2 {
+.main-index h2 {
   margin-left: 0.75em;
 }
-main h3 {
+.main-index h3 {
   margin-bottom: 0.25em;
   margin-left: 0.66em;
 }
-main p {
+.main-index p {
   margin-top: 0.25em;
   margin-left: 0.66em;
 }
@@ -5062,8 +5062,8 @@ img {
 .margin-bottom-1 {
   margin-bottom: 1em;
 }
-.red-background {
-  background-color: red;
+.white-background {
+  background-color: #fff;
 }
 .grey-background {
   background-color: #f6f6f6;
@@ -5121,7 +5121,7 @@ picture > img {
   line-height: 3em;
 }
 .text-white {
-  color: white;
+  color: #fff;
 }
 .shadow {
   box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.08);
@@ -5166,4 +5166,16 @@ picture > img {
 }
 .ft__icon {
   width: 30px;
+}
+.z-1 {
+  z-index: 1;
+}
+.z-2 {
+  z-index: 2;
+}
+.menus-header-overlay {
+  position: relative;
+  margin-top: -50px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
