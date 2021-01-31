@@ -49,7 +49,7 @@ header {
   }
 }
 
-main {
+.main-index {
   h2 {
     margin-left: 0.75em;
   }
@@ -128,8 +128,8 @@ img {
   margin-bottom: 1em;
 }
 
-.red-background {
-  background-color: red;
+.white-background {
+  background-color: $colour-white;
 }
 
 .grey-background {
@@ -210,7 +210,7 @@ picture {
 }
 
 .text-white {
-  color: white;
+  color: $colour-white;
 }
 
 .shadow {
@@ -268,4 +268,19 @@ picture {
   &__icon {
     width: 30px;
   }
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.menus-header-overlay {
+  position: relative;
+  margin-top: -50px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
