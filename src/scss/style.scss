@@ -195,9 +195,32 @@ picture {
   &-menu {
     width: 334px;
     border-radius: 25px;
+    overflow: hidden;
 
     &:hover {
-      background-color: $colour-green;
+      .may-be-truncated {
+        width: 225px;
+        transition: all 0.2s linear;
+      }
+
+      .to-hide {
+        visibility: visible;
+      }
+
+      .to-translate {
+        min-width: 70px;
+        background-color: $colour-green;
+      }
+
+      .to-rotate {
+        animation: rotate360 0.2s linear forwards;
+
+        @keyframes rotate360 {
+          to {
+            transform: rotate(360deg);
+          }
+        }
+      }
     }
 
     &--overlay {
@@ -234,11 +257,7 @@ picture {
 
 .fa-check-circle {
   &.to-hide {
-    visibility: visible;
-
-    &:hover {
-      visibility: visible;
-    }
+    visibility: hidden;
   }
 }
 
