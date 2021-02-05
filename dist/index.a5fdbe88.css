@@ -5111,9 +5111,26 @@ picture > img {
 .card-menu {
   width: 334px;
   border-radius: 25px;
+  overflow: hidden;
 }
-.card-menu:hover {
+.card-menu:hover .may-be-truncated {
+  width: 225px;
+  transition: all 0.2s linear;
+}
+.card-menu:hover .to-hide {
+  visibility: visible;
+}
+.card-menu:hover .to-translate {
+  min-width: 70px;
   background-color: #99e2d0;
+}
+.card-menu:hover .to-rotate {
+  animation: rotate360 0.2s linear forwards;
+}
+@keyframes rotate360 {
+  to {
+    transform: rotate(360deg);
+  }
 }
 .card-menu--overlay {
   background-color: #99e2d0;
@@ -5138,10 +5155,7 @@ picture > img {
   font-size: 1.33em;
 }
 .fa-check-circle.to-hide {
-  visibility: visible;
-}
-.fa-check-circle.to-hide:hover {
-  visibility: visible;
+  visibility: hidden;
 }
 .text-size-14 {
   font-size: 1.4em;
