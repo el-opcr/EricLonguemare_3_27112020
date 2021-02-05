@@ -195,6 +195,7 @@ picture {
   &-menu {
     width: 334px;
     border-radius: 25px;
+    overflow: hidden;
 
     &:hover {
       .may-be-truncated {
@@ -209,8 +210,6 @@ picture {
       .to-translate {
         min-width: 70px;
         background-color: $colour-green;
-        border-top-right-radius: 25px;
-        border-bottom-right-radius: 25px;
       }
 
       .to-rotate {
