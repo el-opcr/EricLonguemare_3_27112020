@@ -5093,6 +5093,10 @@ picture > img {
 .card {
   border-radius: 5%;
 }
+.card-menu {
+  width: 334px;
+  border-radius: 25px;
+}
 .fa-heart.to-show:hover {
   font-size: 1.34em;
   background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
@@ -5101,6 +5105,12 @@ picture > img {
 }
 .fa-heart.to-hide {
   font-size: 1.33em;
+}
+.fa-check-circle.to-hide {
+  visibility: visible;
+}
+.fa-check-circle.to-hide:hover {
+  visibility: visible;
 }
 .text-size-14 {
   font-size: 1.4em;
@@ -5178,4 +5188,13 @@ picture > img {
   margin-top: -50px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+}
+.may-be-truncated {
+  width: 290px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.self-flex-end {
+  align-self: flex-end;
 }
