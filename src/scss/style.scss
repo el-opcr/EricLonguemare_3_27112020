@@ -143,6 +143,10 @@ img {
   padding: 2em;
 }
 
+.padding-right-05 {
+  padding-right: 0.5em;
+}
+
 .margin-top-2 {
   margin-top: 2em;
 }
@@ -194,12 +198,12 @@ picture {
 
   &-menu {
     width: 334px;
-    border-radius: 25px;
     overflow: hidden;
+    border-radius: 25px;
 
     &:hover {
       .may-be-truncated {
-        width: 225px;
+        width: 220px;
         transition: all 0.2s linear;
       }
 
