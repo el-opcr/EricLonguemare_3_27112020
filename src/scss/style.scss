@@ -170,6 +170,11 @@ picture {
   border-radius: 5%;
 }
 
+.card-menu {
+  width: 334px;
+  border-radius: 25px;
+}
+
 .fa-heart {
   &.to-show {
     &:hover {
@@ -182,6 +187,16 @@ picture {
 
   &.to-hide {
     font-size: 1.33em;
+  }
+}
+
+.fa-check-circle {
+  &.to-hide {
+    visibility: visible;
+
+    &:hover {
+      visibility: visible;
+    }
   }
 }
 
@@ -283,4 +298,15 @@ picture {
   margin-top: -50px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+}
+
+.may-be-truncated {
+  width: 290px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.self-flex-end {
+  align-self: flex-end;
 }
