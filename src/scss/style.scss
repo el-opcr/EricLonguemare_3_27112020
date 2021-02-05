@@ -168,11 +168,28 @@ picture {
 
 .card {
   border-radius: 5%;
-}
 
-.card-menu {
-  width: 334px;
-  border-radius: 25px;
+  &-menu {
+    width: 334px;
+    border-radius: 25px;
+
+    &:hover {
+      background-color: $colour-green;
+    }
+
+    &--overlay {
+      background-color: $colour-green;
+      opacity: 0;
+
+      &:hover {
+        width: 100%;
+        background-size: cover;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .fa-heart {
@@ -230,6 +247,10 @@ picture {
 
 .shadow {
   box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.08);
+
+  &:hover {
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .shadow-top-bottom {
@@ -243,6 +264,11 @@ picture {
     margin-bottom: 2em;
     background-image: linear-gradient(to bottom, $colour-pink 0%, $colour-purple 100%);
     border-radius: 25px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 90%;
+    }
   }
 
   &-process {
