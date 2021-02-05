@@ -197,7 +197,26 @@ picture {
     border-radius: 25px;
 
     &:hover {
-      background-color: $colour-green;
+      .may-be-truncated {
+        width: 225px;
+      }
+
+      .toTranslate {
+        position: relative;
+        align-self: stretch;
+        min-width: 70px;
+        background-color: $colour-green;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        /*transition: 0.5s ease-in-out;*/
+        animation: translate100 1.2s linear infinite;
+
+        @keyframes translate100 {
+          to {
+            transform: translateX(100);
+          }
+        }
+      }
     }
 
     &--overlay {
