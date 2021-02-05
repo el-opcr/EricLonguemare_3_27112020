@@ -226,19 +226,6 @@ picture {
         }
       }
     }
-
-    &--overlay {
-      background-color: $colour-green;
-      opacity: 0;
-
-      &:hover {
-        width: 100%;
-        background-size: cover;
-        border-top-right-radius: 25px;
-        border-bottom-right-radius: 25px;
-        opacity: 1;
-      }
-    }
   }
 }
 
