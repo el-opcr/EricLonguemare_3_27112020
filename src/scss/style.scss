@@ -199,21 +199,26 @@ picture {
     &:hover {
       .may-be-truncated {
         width: 225px;
+        transition: all 0.2s linear;
       }
 
-      .toTranslate {
-        position: relative;
-        align-self: stretch;
+      .to-hide {
+        visibility: visible;
+      }
+
+      .to-translate {
         min-width: 70px;
         background-color: $colour-green;
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;
-        /*transition: 0.5s ease-in-out;*/
-        animation: translate100 1.2s linear infinite;
+      }
 
-        @keyframes translate100 {
+      .to-rotate {
+        animation: rotate360 0.2s linear forwards;
+
+        @keyframes rotate360 {
           to {
-            transform: translateX(100);
+            transform: rotate(360deg);
           }
         }
       }
@@ -253,11 +258,7 @@ picture {
 
 .fa-check-circle {
   &.to-hide {
-    visibility: visible;
-
-    &:hover {
-      visibility: visible;
-    }
+    visibility: hidden;
   }
 }
 
