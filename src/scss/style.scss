@@ -46,22 +46,45 @@ header {
       height: 2em;
       margin: 0 auto 0;
     }
+
+    > h2 {
+      margin-left: 1em;
+    }
   }
 }
 
-.main-index {
-  h2 {
-    margin-left: 0.75em;
+.main {
+  &-index {
+    h2 {
+      margin-left: 0.75em;
+    }
+
+    h3 {
+      margin-bottom: 0.25em;
+      margin-left: 0.66em;
+    }
+
+    p {
+      margin-top: 0.25em;
+      margin-left: 0.66em;
+    }
   }
 
-  h3 {
-    margin-bottom: 0.25em;
-    margin-left: 0.66em;
-  }
+  &-menu {
+    h3 {
+      margin-bottom: 0.25em;
+      margin-left: 1em;
+    }
 
-  p {
-    margin-top: 0.25em;
-    margin-left: 0.66em;
+    h4 {
+      margin-bottom: 0.25em;
+      margin-left: 0.66em;
+    }
+
+    p:nth-child(2) {
+      margin-top: 0.25em;
+      margin-left: 0.66em;
+    }
   }
 }
 
@@ -168,20 +191,39 @@ picture {
 
 .card {
   border-radius: 5%;
-}
 
-.card-menu {
-  width: 334px;
-  border-radius: 25px;
+  &-menu {
+    width: 334px;
+    border-radius: 25px;
+
+    &:hover {
+      background-color: $colour-green;
+    }
+
+    &--overlay {
+      background-color: $colour-green;
+      opacity: 0;
+
+      &:hover {
+        width: 100%;
+        background-size: cover;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .fa-heart {
   &.to-show {
     &:hover {
       font-size: 1.34em;
+      cursor: pointer;
       background: linear-gradient(to bottom, $colour-purple 0%, $colour-pink 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      transition: 0.2s ease-out;
     }
   }
 
@@ -230,6 +272,10 @@ picture {
 
 .shadow {
   box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.08);
+
+  &:hover {
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .shadow-top-bottom {
@@ -243,6 +289,11 @@ picture {
     margin-bottom: 2em;
     background-image: linear-gradient(to bottom, $colour-pink 0%, $colour-purple 100%);
     border-radius: 25px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 90%;
+    }
   }
 
   &-process {
