@@ -193,13 +193,6 @@ picture {
   }
 }
 
-.may-be-truncated {
-  width: 290px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .card {
   border-radius: 5%;
 
@@ -207,9 +200,36 @@ picture {
     width: 334px;
     overflow: hidden;
     border-radius: 25px;
+    opacity: 0;
+    animation:
+      fadeInAnimation 1s linear forwards,
+      moveUp 1s ease-out forwards;
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes moveUp {
+      0% {
+        margin-bottom: 50px;
+      }
+
+      100% {
+        margin-bottom: 0;
+      }
+    }
 
     .may-be-truncated {
-      width: 288px;
+      width: 289px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       transition: all 0.5s ease-in-out;
     }
 
@@ -245,17 +265,21 @@ picture {
 .fa-heart {
   &.to-show {
     &:hover {
-      font-size: 1.34em;
+      font-size: 1.4em;
+      color: transparent;
       cursor: pointer;
       background: linear-gradient(to bottom, $colour-purple 0%, $colour-pink 100%);
+
+      /* https://developer.mozilla.org/fr/docs/Web/CSS/background-clip */
+
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: 0.5s ease-out;
+      background-clip: text;
+      transition: all 0.5s ease-out;
     }
   }
 
   &.to-hide {
-    font-size: 1.33em;
+    font-size: 1.3em;
   }
 }
 
