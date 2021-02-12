@@ -20,8 +20,8 @@
   "homepage": "https://github.com/el-opcr/EricLonguemare_3_27112020/dist",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
-    "parcel": "^2.0.0-nightly.558",
-    "sass": "^1.32.4",
+    "parcel": "^2.0.0-nightly.585",
+    "sass": "^1.32.7",
     "sharp": "^0.27.1"
   }
 }
