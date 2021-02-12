@@ -200,15 +200,12 @@ picture {
     width: 334px;
     overflow: hidden;
     border-radius: 25px;
+    transition: all 2s ease-in-out;
 
     &:hover {
       .may-be-truncated {
         width: 220px;
-        transition: all 0.2s linear;
-      }
-
-      .to-hide {
-        visibility: visible;
+        transition: all 1s ease-in-out;
       }
 
       .to-translate {
@@ -217,9 +214,9 @@ picture {
       }
 
       .to-rotate {
-        animation: rotate360 0.2s linear forwards;
+        animation: rotateIn 1s ease-in-out forwards;
 
-        @keyframes rotate360 {
+        @keyframes rotateIn {
           to {
             transform: rotate(360deg);
           }
