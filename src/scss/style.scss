@@ -200,12 +200,21 @@ picture {
     width: 334px;
     overflow: hidden;
     border-radius: 25px;
-    transition: all 2s ease-in-out;
+
+    .may-be-truncated {
+      width: 288px;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .to-translate {
+      min-width: 70px;
+      background-color: $colour-green;
+    }
 
     &:hover {
       .may-be-truncated {
         width: 220px;
-        transition: all 1s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
 
       .to-translate {
@@ -214,7 +223,7 @@ picture {
       }
 
       .to-rotate {
-        animation: rotateIn 1s ease-in-out forwards;
+        animation: rotateIn 0.5s ease-in-out forwards;
 
         @keyframes rotateIn {
           to {
@@ -234,7 +243,7 @@ picture {
       background: linear-gradient(to bottom, $colour-purple 0%, $colour-pink 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      transition: 0.2s ease-out;
+      transition: 0.5s ease-out;
     }
   }
 
