@@ -193,13 +193,6 @@ picture {
   }
 }
 
-.may-be-truncated {
-  width: 290px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .card {
   border-radius: 5%;
 
@@ -209,7 +202,10 @@ picture {
     border-radius: 25px;
 
     .may-be-truncated {
-      width: 288px;
+      width: 289px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       transition: all 0.5s ease-in-out;
     }
 
