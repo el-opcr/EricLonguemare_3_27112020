@@ -5108,6 +5108,12 @@ picture > img {
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
 }
+.may-be-truncated {
+  width: 290px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .card {
   border-radius: 5%;
 }
@@ -5115,18 +5121,25 @@ picture > img {
   width: 334px;
   overflow: hidden;
   border-radius: 25px;
-  transition: all 2s ease-in-out;
+}
+.card-menu .may-be-truncated {
+  width: 288px;
+  transition: all 0.5s ease-in-out;
+}
+.card-menu .to-translate {
+  min-width: 70px;
+  background-color: #99e2d0;
 }
 .card-menu:hover .may-be-truncated {
   width: 220px;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .card-menu:hover .to-translate {
   min-width: 70px;
   background-color: #99e2d0;
 }
 .card-menu:hover .to-rotate {
-  animation: rotateIn 1s ease-in-out forwards;
+  animation: rotateIn 0.5s ease-in-out forwards;
 }
 @keyframes rotateIn {
   to {
@@ -5139,7 +5152,7 @@ picture > img {
   background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.2s ease-out;
+  transition: 0.5s ease-out;
 }
 .fa-heart.to-hide {
   font-size: 1.33em;
@@ -5230,12 +5243,6 @@ picture > img {
   margin-top: -50px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-}
-.may-be-truncated {
-  width: 290px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .self-flex-end {
   align-self: flex-end;

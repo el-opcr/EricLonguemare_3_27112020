@@ -5,7 +5,7 @@
   "scripts": {
     "sass-only": "node_modules/.bin/sass --watch --update ./src/scss/style.scss:./assets/css/style.css",
     "dev": "parcel src/index.html",
-    "build": "parcel build --public-url . src/index.html --no-source-maps --no-minify",
+    "build": "parcel build --public-url . src/index.html --no-source-maps --no-optimize",
     "prebuild": "rm -rf dist"
   },
   "repository": {
@@ -20,6 +20,16 @@
   "homepage": "https://github.com/el-opcr/EricLonguemare_3_27112020/dist",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
+    "@parcel/optimizer-cssnano": "^2.0.0-nightly.587",
+    "@parcel/optimizer-htmlnano": "^2.0.0-nightly.587",
+    "@parcel/packager-css": "^2.0.0-nightly.587",
+    "@parcel/packager-html": "^2.0.0-nightly.587",
+    "@parcel/transformer-css": "^2.0.0-nightly.587",
+    "@parcel/transformer-html": "^2.0.0-nightly.587",
+    "@parcel/transformer-image": "^2.0.0-nightly.2209",
+    "@parcel/transformer-postcss": "^2.0.0-nightly.587",
+    "@parcel/transformer-posthtml": "^2.0.0-nightly.587",
+    "@parcel/transformer-sass": "^2.0.0-nightly.587",
     "parcel": "^2.0.0-nightly.585",
     "sass": "^1.32.7",
     "sharp": "^0.27.1"
