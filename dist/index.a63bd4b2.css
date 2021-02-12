@@ -5115,36 +5115,23 @@ picture > img {
   width: 334px;
   overflow: hidden;
   border-radius: 25px;
+  transition: all 2s ease-in-out;
 }
 .card-menu:hover .may-be-truncated {
   width: 220px;
-  transition: all 0.2s linear;
-}
-.card-menu:hover .to-hide {
-  visibility: visible;
+  transition: all 1s ease-in-out;
 }
 .card-menu:hover .to-translate {
   min-width: 70px;
   background-color: #99e2d0;
 }
 .card-menu:hover .to-rotate {
-  animation: rotate360 0.2s linear forwards;
+  animation: rotateIn 1s ease-in-out forwards;
 }
-@keyframes rotate360 {
+@keyframes rotateIn {
   to {
     transform: rotate(360deg);
   }
-}
-.card-menu--overlay {
-  background-color: #99e2d0;
-  opacity: 0;
-}
-.card-menu--overlay:hover {
-  width: 100%;
-  background-size: cover;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  opacity: 1;
 }
 .fa-heart.to-show:hover {
   font-size: 1.34em;
