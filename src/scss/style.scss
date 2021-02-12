@@ -200,7 +200,16 @@ picture {
     width: 334px;
     overflow: hidden;
     border-radius: 25px;
-    transition: all 2s ease-in-out;
+
+    .may-be-truncated {
+      width: 288px;
+      transition: all 1s ease-in-out;
+    }
+
+    .to-translate {
+      min-width: 70px;
+      background-color: $colour-green;
+    }
 
     &:hover {
       .may-be-truncated {
