@@ -193,6 +193,13 @@ picture {
   }
 }
 
+.may-be-truncated {
+  width: 290px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .card {
   border-radius: 5%;
 
@@ -365,13 +372,6 @@ picture {
   margin-top: -50px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-}
-
-.may-be-truncated {
-  width: 290px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .self-flex-end {
