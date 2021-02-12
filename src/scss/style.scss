@@ -203,7 +203,7 @@ picture {
 
     .may-be-truncated {
       width: 288px;
-      transition: all 1s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
 
     .to-translate {
@@ -214,7 +214,7 @@ picture {
     &:hover {
       .may-be-truncated {
         width: 220px;
-        transition: all 1s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
 
       .to-translate {
@@ -223,7 +223,7 @@ picture {
       }
 
       .to-rotate {
-        animation: rotateIn 1s ease-in-out forwards;
+        animation: rotateIn 0.5s ease-in-out forwards;
 
         @keyframes rotateIn {
           to {
