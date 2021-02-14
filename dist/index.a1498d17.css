@@ -4979,6 +4979,8 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
 }
+/* Large screen - from 992 px screen size */
+/* Small screen - up to 991 px screen size */
 body {
   max-width: 1440px;
   margin: auto;
@@ -5086,6 +5088,26 @@ img {
 .grey-background {
   background-color: #f6f6f6;
 }
+@media only screen and (min-width: 992px) {
+  .white-to-grey-background {
+    background-color: #f6f6f6;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .white-to-grey-background {
+    background-color: #fff;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .grey-to-white-background {
+    background-color: #fff;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .grey-to-white-background {
+    background-color: #f6f6f6;
+  }
+}
 .dark-grey-background {
   background-color: #eaeaea;
 }
@@ -5101,7 +5123,8 @@ picture > img {
 .card-desk > a {
   margin: 1em;
 }
-.card-desk > a > img {
+.card-desk > a > img,
+.card-desk > a > div > img {
   width: 100%;
   min-width: 334px;
   height: 174px;
@@ -5116,22 +5139,31 @@ picture > img {
   overflow: hidden;
   border-radius: 25px;
   opacity: 0;
-  animation: fadeInAnimation 1s linear forwards, moveUp 1s ease-out forwards;
+  animation: fadeInAnimation 1s ease-in-out forwards, moveAnimation 1s ease-out forwards;
 }
 @keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
+  to {
     opacity: 1;
   }
 }
-@keyframes moveUp {
-  0% {
-    margin-bottom: 50px;
+@media only screen and (min-width: 992px) {
+  @keyframes moveAnimation {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
-  100% {
-    margin-bottom: 0;
+}
+@media only screen and (max-width: 991px) {
+  @keyframes moveAnimation {
+    0% {
+      margin-bottom: 50px;
+    }
+    100% {
+      margin-bottom: 0;
+    }
   }
 }
 .card-menu .may-be-truncated {
@@ -5160,6 +5192,21 @@ picture > img {
   to {
     transform: rotate(360deg);
   }
+}
+.picture-block {
+  position: relative;
+}
+.new-top-right {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  padding-top: 0.5em;
+  padding-right: 1em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  color: #008766;
+  background-color: #99e2d0;
+  border-radius: 5%;
 }
 .fa-heart.to-show:hover {
   font-size: 1.4em;
