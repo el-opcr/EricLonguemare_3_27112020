@@ -15,6 +15,22 @@ https://youtrack.jetbrains.com/issue/WEB-26130
 @import "@fortawesome/fontawesome-free/scss/solid";
 @import "@fortawesome/fontawesome-free/scss/regular";
 
+/* Large screen - from 992 px screen size */
+
+@mixin large-screen {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+/* Small screen - up to 991 px screen size */
+
+@mixin small-screen {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
 body {
   max-width: 1440px;
   margin: auto;
@@ -163,6 +179,28 @@ img {
   background-color: $colour-light-grey;
 }
 
+.white-to-grey-background {
+
+  @include large-screen {
+    background-color: $colour-light-grey;
+  }
+
+  @include small-screen {
+    background-color: $colour-white;
+  }
+}
+
+.grey-to-white-background {
+
+  @include large-screen {
+    background-color: $colour-white;
+  }
+
+  @include small-screen {
+    background-color: $colour-light-grey;
+  }
+}
+
 .dark-grey-background {
   background-color: $colour-dark-grey;
 }
@@ -183,7 +221,8 @@ picture {
   > a {
     margin: 1em;
 
-    > img {
+    > img,
+    > div > img {
       width: 100%;
       min-width: 334px;
       height: 174px;
@@ -202,26 +241,36 @@ picture {
     border-radius: 25px;
     opacity: 0;
     animation:
-      fadeInAnimation 1s linear forwards,
-      moveUp 1s ease-out forwards;
+      fadeInAnimation 1s ease-in-out forwards,
+      moveAnimation 1s ease-out forwards;
 
     @keyframes fadeInAnimation {
-      0% {
-        opacity: 0;
-      }
-
-      100% {
+      to {
         opacity: 1;
       }
     }
 
-    @keyframes moveUp {
-      0% {
-        margin-bottom: 50px;
-      }
+    @include large-screen {
+      @keyframes moveAnimation {
+        0% {
+          transform: scale(0);
+        }
 
-      100% {
-        margin-bottom: 0;
+        100% {
+          transform: scale(1);
+        }
+      }
+    }
+
+    @include small-screen {
+      @keyframes moveAnimation {
+        0% {
+          margin-bottom: 50px;
+        }
+
+        100% {
+          margin-bottom: 0;
+        }
       }
     }
 
@@ -260,6 +309,23 @@ picture {
       }
     }
   }
+}
+
+.picture-block {
+  position: relative;
+}
+
+.new-top-right {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  padding-top: 0.5em;
+  padding-right: 1em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  color: $colour-dark-green;
+  background-color: $colour-green;
+  border-radius: 5%;
 }
 
 .fa-heart {
