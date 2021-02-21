@@ -5214,8 +5214,11 @@ picture > img {
   cursor: pointer;
   background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
   /* https://developer.mozilla.org/fr/docs/Web/CSS/background-clip */
+  /* https://compat.spec.whatwg.org/#the-webkit-background-clip-property */
+  /* https://lists.w3.org/Archives/Public/www-style/2016Mar/0283.html */
+  /* https://drafts.csswg.org/css-backgrounds-4/#background-clip */
   -webkit-background-clip: text;
-  background-clip: text;
+  /* background-clip: text; */
   transition: all 0.5s ease-out;
 }
 .fa-heart.to-hide {
