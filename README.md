@@ -13,22 +13,27 @@ index page :
 - [x] [HTML5](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fel-opcr.github.io%2FEricLonguemare_3_27112020%2Fdist%2F)
 - [x] [CSS3](https://jigsaw.w3.org/css-validator/validator?uri=https://el-opcr.github.io/EricLonguemare_3_27112020/dist/&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr)
 - [x] [Lighthouse report for mobile](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fel-opcr.github.io%2FEricLonguemare_3_27112020%2Fdist%2Findex.html)
+
 La palette du goût - menu :
 
 - [x] [HTML5](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fel-opcr.github.io%2FEricLonguemare_3_27112020%2Fdist%2Fla-palette-du-gout.html)
 - [x] [CSS3](https://jigsaw.w3.org/css-validator/validator?uri=https://el-opcr.github.io/EricLonguemare_3_27112020/dist/la-palette-du-gout.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr)
+- [x] [Lighthouse report for mobile](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fel-opcr.github.io%2FEricLonguemare_3_27112020%2Fdist%2Fla-palette-du-gout.html)
 
 La note enchantée - menu :
 
 - [x] [HTML5](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fel-opcr.github.io%2FEricLonguemare_3_27112020%2Fdist%2Fla-note-enchantee.html)
 - [x] [CSS3](https://jigsaw.w3.org/css-validator/validator?uri=https://el-opcr.github.io/EricLonguemare_3_27112020/dist/la-note-enchantee.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr)
+- [x] [Lighthouse report for mobile](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fel-opcr.github.io%2FEricLonguemare_3_27112020%2Fdist%2Fla-note-enchantee.html)
 
 À la française - menu :
 
 - [x] [HTML5](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fel-opcr.github.io%2FEricLonguemare_3_27112020%2Fdist%2Fa-la-francaise.html)
 - [x] [CSS3](https://jigsaw.w3.org/css-validator/validator?uri=https://el-opcr.github.io/EricLonguemare_3_27112020/dist/a-la-francaise.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr)
+- [x] [Lighthouse report for mobile](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fel-opcr.github.io%2FEricLonguemare_3_27112020%2Fdist%2Fa-la-francaise.html)
 
 Le délice des sens - menu :
 
 - [x] [HTML5](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fel-opcr.github.io%2FEricLonguemare_3_27112020%2Fdist%2Fle-delice-des-sens.html)
 - [x] [CSS3](https://jigsaw.w3.org/css-validator/validator?uri=https://el-opcr.github.io/EricLonguemare_3_27112020/dist/le-delice-des-sens.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr)
+- [x] [Lighthouse report for mobile](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fel-opcr.github.io%2FEricLonguemare_3_27112020%2Fdist%2Fle-delice-des-sens.html)
