@@ -12,7 +12,7 @@ index page :
 
 - [x] [HTML5](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fel-opcr.github.io%2FEricLonguemare_3_27112020%2Fdist%2F)
 - [x] [CSS3](https://jigsaw.w3.org/css-validator/validator?uri=https://el-opcr.github.io/EricLonguemare_3_27112020/dist/&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr)
-
+- [x] [Lighthouse report for mobile](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fel-opcr.github.io%2FEricLonguemare_3_27112020%2Fdist%2Findex.html)
 La palette du goût - menu :
 
 - [x] [HTML5](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fel-opcr.github.io%2FEricLonguemare_3_27112020%2Fdist%2Fla-palette-du-gout.html)
