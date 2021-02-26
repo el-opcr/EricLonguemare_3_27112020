@@ -337,7 +337,7 @@ picture {
 .fa-heart {
   &.to-show {
     &:hover {
-      font-size: 1.4em;
+      font-size: 1.47em;
       color: transparent;
       cursor: pointer;
       background: linear-gradient(to bottom, $colour-purple 0%, $colour-pink 100%);
@@ -355,7 +355,8 @@ picture {
   }
 
   &.to-hide {
-    font-size: 1.3em;
+    font-size: 1.4em;
+    background: transparent;
   }
 }
 
