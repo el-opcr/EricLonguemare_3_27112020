@@ -5218,7 +5218,7 @@ picture > img {
   border-radius: 5%;
 }
 .fa-heart.to-show:hover {
-  font-size: 1.4em;
+  font-size: 1.47em;
   color: transparent;
   cursor: pointer;
   background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
@@ -5231,7 +5231,8 @@ picture > img {
   transition: all 0.5s ease-out;
 }
 .fa-heart.to-hide {
-  font-size: 1.3em;
+  font-size: 1.4em;
+  background: transparent;
 }
 .fa-check-circle.to-hide {
   visibility: hidden;
