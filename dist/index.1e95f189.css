@@ -5058,6 +5058,7 @@ img {
 @media only screen and (min-width: 992px) {
   .flex-column-or-raw {
     flex-direction: row;
+    justify-content: space-around;
   }
 }
 .flex-wrap {

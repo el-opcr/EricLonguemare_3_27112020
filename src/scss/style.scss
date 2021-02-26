@@ -134,6 +134,7 @@ img {
 
   @include large-screen {
     flex-direction: row;
+    justify-content: space-around;
   }
 }
 
