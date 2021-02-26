@@ -5068,6 +5068,15 @@ img {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (min-width: 992px) {
+  .flex-start-desktop {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .flex-start-desktop button {
+    align-self: center;
+  }
+}
 .flex-centered-vertical {
   align-items: center;
 }
