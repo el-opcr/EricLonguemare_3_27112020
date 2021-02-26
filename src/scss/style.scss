@@ -127,6 +127,16 @@ img {
   flex-direction: column;
 }
 
+.flex-column-or-raw {
+  @include small-screen {
+    flex-direction: column;
+  }
+
+  @include large-screen {
+    flex-direction: row;
+  }
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -318,10 +328,7 @@ picture {
   position: absolute;
   top: 1em;
   right: 1em;
-  padding-top: 0.5em;
-  padding-right: 1em;
-  padding-bottom: 0.5em;
-  padding-left: 1em;
+  padding: 0.5em 1em;
   color: $colour-dark-green;
   background-color: $colour-green;
   border-radius: 5%;
