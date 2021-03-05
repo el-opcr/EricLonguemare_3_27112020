@@ -287,9 +287,10 @@ picture {
     width: 334px;
     overflow: hidden;
     border-radius: 25px;
-    animation: moveAnimation 0.5s ease-out forwards;
 
     @include small-screen {
+      animation: moveAnimation 0.5s ease-out forwards;
+
       @keyframes moveAnimation {
         0% {
           margin-bottom: 50px;
