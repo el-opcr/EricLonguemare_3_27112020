@@ -328,12 +328,6 @@ picture {
 
       .to-rotate {
         animation: rotateIn 0.5s ease-in-out forwards;
-
-        @keyframes rotateIn {
-          to {
-            transform: rotate(360deg);
-          }
-        }
       }
     }
   }
@@ -543,11 +537,11 @@ picture {
   .fa-list-ul,
   .fa-store {
     animation: rotateIn 0.5s ease-in-out forwards;
+  }
+}
 
-    @keyframes rotateIn {
-      to {
-        transform: rotate(360deg);
-      }
-    }
+@keyframes rotateIn {
+  to {
+    transform: rotate(360deg);
   }
 }
