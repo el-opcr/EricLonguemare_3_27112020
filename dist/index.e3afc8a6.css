@@ -5071,7 +5071,7 @@ img {
 @media only screen and (min-width: 992px) {
   .flex-start-desktop {
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-around;
   }
   .flex-start-desktop button {
     align-self: center;
@@ -5139,6 +5139,27 @@ img {
 picture > img {
   max-height: 300px;
 }
+@media only screen and (min-width: 992px) {
+  .fadeInLargeScreens {
+    opacity: 0;
+    animation: fadeInAnimation 0.5s ease-in-out forwards;
+    /* https://stackoverflow.com/questions/8533432/creating-or-referencing-variables-dynamically-in-sass */
+  }
+  @keyframes fadeInAnimation {
+    to {
+      opacity: 1;
+    }
+  }
+  .fadeInLargeScreens:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .fadeInLargeScreens:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  .fadeInLargeScreens:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+}
 .card-desk {
   padding-bottom: 3em;
 }
@@ -5160,23 +5181,7 @@ picture > img {
   width: 334px;
   overflow: hidden;
   border-radius: 25px;
-  opacity: 0;
-  animation: fadeInAnimation 1s ease-in-out forwards, moveAnimation 1s ease-out forwards;
-}
-@keyframes fadeInAnimation {
-  to {
-    opacity: 1;
-  }
-}
-@media only screen and (min-width: 992px) {
-  @keyframes moveAnimation {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
+  animation: moveAnimation 0.5s ease-out forwards;
 }
 @media only screen and (max-width: 991px) {
   @keyframes moveAnimation {
