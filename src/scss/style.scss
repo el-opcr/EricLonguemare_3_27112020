@@ -428,10 +428,17 @@ picture {
   }
 
   &-process {
-    width: 325px;
     height: 75px;
     margin: 0.5em;
     border-radius: 20px;
+
+    @include small-screen {
+      width: 280px;
+    }
+
+    @include large-screen {
+      width: 325px;
+    }
 
     &:last-child {
       margin-bottom: 4em;
