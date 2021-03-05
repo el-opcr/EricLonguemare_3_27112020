@@ -32,6 +32,20 @@ https://youtrack.jetbrains.com/issue/WEB-26130
   }
 }
 
+/* backgrounds colors change */
+
+@mixin medium-background-screen {
+  @media only screen and (min-width: 548px) {
+    @content;
+  }
+}
+
+@mixin small-background-screen {
+  @media only screen and (max-width: 547px) {
+    @content;
+  }
+}
+
 body {
   max-width: 1440px;
   margin: auto;
@@ -203,21 +217,21 @@ img {
 }
 
 .white-to-grey-background {
-  @include large-screen {
+  @include medium-background-screen {
     background-color: $colour-light-grey;
   }
 
-  @include small-screen {
+  @include small-background-screen {
     background-color: $colour-white;
   }
 }
 
 .grey-to-white-background {
-  @include large-screen {
+  @include medium-background-screen {
     background-color: $colour-white;
   }
 
-  @include small-screen {
+  @include small-background-screen {
     background-color: $colour-light-grey;
   }
 }
