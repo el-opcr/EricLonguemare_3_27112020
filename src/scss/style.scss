@@ -241,12 +241,6 @@ picture {
     opacity: 0;
     animation: fadeInAnimation 0.5s ease-in-out forwards;
 
-    @keyframes fadeInAnimation {
-      to {
-        opacity: 1;
-      }
-    }
-
     /* https://stackoverflow.com/questions/8533432/creating-or-referencing-variables-dynamically-in-sass */
 
     &:nth-child(1) {
@@ -289,17 +283,7 @@ picture {
     border-radius: 25px;
 
     @include small-screen {
-      animation: moveAnimation 0.5s ease-out forwards;
-
-      @keyframes moveAnimation {
-        0% {
-          margin-bottom: 50px;
-        }
-
-        100% {
-          margin-bottom: 0;
-        }
-      }
+      animation: moveAnimation 1.5s ease-out forwards;
     }
 
     .may-be-truncated {
@@ -508,17 +492,6 @@ picture {
   background-color: $colour-green;
   animation: spinAnimation 1s ease-out forwards;
 
-  @keyframes spinAnimation {
-    0% {
-      height: 100vh;
-    }
-
-    100% {
-      height: 0;
-      color: transparent;
-    }
-  }
-
   > i {
     &:nth-child(1) {
       animation-delay: 0.1s;
@@ -540,8 +513,35 @@ picture {
   }
 }
 
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveAnimation {
+  0% {
+    margin-bottom: 50px;
+  }
+
+  100% {
+    margin-bottom: 0;
+  }
+}
+
 @keyframes rotateIn {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes spinAnimation {
+  0% {
+    height: 100vh;
+  }
+
+  100% {
+    height: 0;
+    color: transparent;
   }
 }
