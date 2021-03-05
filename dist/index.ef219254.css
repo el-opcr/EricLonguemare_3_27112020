@@ -5145,11 +5145,6 @@ picture > img {
     animation: fadeInAnimation 0.5s ease-in-out forwards;
     /* https://stackoverflow.com/questions/8533432/creating-or-referencing-variables-dynamically-in-sass */
   }
-  @keyframes fadeInAnimation {
-    to {
-      opacity: 1;
-    }
-  }
   .fadeInLargeScreens:nth-child(1) {
     animation-delay: 0.1s;
   }
@@ -5184,15 +5179,7 @@ picture > img {
 }
 @media only screen and (max-width: 991px) {
   .card-menu {
-    animation: moveAnimation 0.5s ease-out forwards;
-  }
-  @keyframes moveAnimation {
-    0% {
-      margin-bottom: 50px;
-    }
-    100% {
-      margin-bottom: 0;
-    }
+    animation: moveAnimation 1.5s ease-out forwards;
   }
 }
 .card-menu .may-be-truncated {
@@ -5216,11 +5203,6 @@ picture > img {
 }
 .card-menu:hover .to-rotate {
   animation: rotateIn 0.5s ease-in-out forwards;
-}
-@keyframes rotateIn {
-  to {
-    transform: rotate(360deg);
-  }
 }
 .picture-block {
   position: relative;
@@ -5354,15 +5336,6 @@ picture > img {
   background-color: #99e2d0;
   animation: spinAnimation 1s ease-out forwards;
 }
-@keyframes spinAnimation {
-  0% {
-    height: 100vh;
-  }
-  100% {
-    height: 0;
-    color: transparent;
-  }
-}
 .loading-spinner > i:nth-child(1) {
   animation-delay: 0.1s;
 }
@@ -5377,8 +5350,30 @@ picture > img {
 .loading-spinner .fa-store {
   animation: rotateIn 0.5s ease-in-out forwards;
 }
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes moveAnimation {
+  0% {
+    margin-bottom: 50px;
+  }
+  100% {
+    margin-bottom: 0;
+  }
+}
 @keyframes rotateIn {
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes spinAnimation {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 0;
+    color: transparent;
   }
 }
