@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/el-opcr/EricLonguemare_3_27112020/issues"
   },
-  "homepage": "https://github.com/el-opcr/EricLonguemare_3_27112020/dist",
+  "homepage": "https://github.com/el-opcr/EricLonguemare_3_27112020",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@parcel/optimizer-cssnano": "^2.0.0-nightly.587",
