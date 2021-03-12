@@ -4,7 +4,7 @@ Clone repository then :
 
 - install : npm install
 
-- dev : npm run dev - then open browser at http://localhost:1234
+- dev : npm run dev - then open browser at http://localhost:1234 - src files are in src/ folder
 
 - build : npm run build - files are in dist/ folder - minification is disabled
 
