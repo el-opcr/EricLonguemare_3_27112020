@@ -4983,6 +4983,7 @@ readers do not read off random characters that represent icons */
 }
 /* Large screen - from 992 px screen size */
 /* Small screen - up to 991 px screen size */
+/* backgrounds colors change */
 body {
   max-width: 1440px;
   margin: auto;
@@ -5024,6 +5025,14 @@ header > div > h2 {
 .main-menu h3 {
   margin-bottom: 0.25em;
   margin-left: 1em;
+}
+.main-menu h3::after {
+  display: block;
+  width: 15%;
+  padding-top: 10px;
+  margin-left: 0;
+  content: "";
+  border-bottom: 5px solid #99e2d0;
 }
 .main-menu h4 {
   margin-bottom: 0.25em;
@@ -5110,22 +5119,22 @@ img {
 .grey-background {
   background-color: #f6f6f6;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 548px) {
   .white-to-grey-background {
     background-color: #f6f6f6;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 547px) {
   .white-to-grey-background {
     background-color: #fff;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 548px) {
   .grey-to-white-background {
     background-color: #fff;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 547px) {
   .grey-to-white-background {
     background-color: #f6f6f6;
   }
@@ -5164,10 +5173,21 @@ picture > img {
 .card-desk > a > img,
 .card-desk > a > div > img {
   width: 100%;
-  min-width: 334px;
   height: 174px;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
+}
+@media only screen and (max-width: 991px) {
+  .card-desk > a > img,
+.card-desk > a > div > img {
+    min-width: 220px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .card-desk > a > img,
+.card-desk > a > div > img {
+    min-width: 334px;
+  }
 }
 .card {
   border-radius: 5%;
@@ -5179,7 +5199,7 @@ picture > img {
 }
 @media only screen and (max-width: 991px) {
   .card-menu {
-    animation: moveAnimation 1.5s ease-out forwards;
+    animation: moveAnimation 3s ease-out forwards;
   }
 }
 .card-menu .may-be-truncated {
@@ -5217,7 +5237,7 @@ picture > img {
   border-radius: 5%;
 }
 .fa-heart.to-show:hover {
-  font-size: 1.47em;
+  font-size: 1.6em;
   color: transparent;
   cursor: pointer;
   background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
@@ -5269,7 +5289,7 @@ picture > img {
 .btn-cta {
   width: 200px;
   height: 50px;
-  margin-bottom: 2em;
+  margin-bottom: 4.5em;
   background-image: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
   border-radius: 25px;
 }
@@ -5278,10 +5298,19 @@ picture > img {
   opacity: 90%;
 }
 .btn-process {
-  width: 325px;
   height: 75px;
   margin: 0.5em;
   border-radius: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .btn-process {
+    width: 280px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .btn-process {
+    width: 325px;
+  }
 }
 .btn-process:last-child {
   margin-bottom: 4em;
@@ -5334,7 +5363,7 @@ picture > img {
   height: 100%;
   color: #9356dc;
   background-color: #99e2d0;
-  animation: spinAnimation 1s ease-out forwards;
+  animation: spinAnimation 2s ease-out forwards;
 }
 .loading-spinner > i:nth-child(1) {
   animation-delay: 0.1s;
@@ -5348,7 +5377,7 @@ picture > img {
 .loading-spinner .fa-mobile-alt,
 .loading-spinner .fa-list-ul,
 .loading-spinner .fa-store {
-  animation: rotateIn 0.5s ease-in-out forwards;
+  animation: rotateIn 1s ease-in-out forwards;
 }
 @keyframes fadeInAnimation {
   to {
