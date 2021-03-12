@@ -1,10 +1,12 @@
 https://el-opcr.github.io/EricLonguemare_3_27112020/dist/
 
-install : npm install
+Clone repository then :
 
-dev : npm run dev - then open browser at http://localhost:1234
+- install : npm install
 
-build : npm run build - files are in dist/ folder - minification is disabled
+- dev : npm run dev - then open browser at http://localhost:1234
+
+- build : npm run build - files are in dist/ folder - minification is disabled
 
 W3C linters reports :
 
