@@ -105,6 +105,15 @@ header {
     h3 {
       margin-bottom: 0.25em;
       margin-left: 1em;
+
+      &::after {
+        display: block;
+        width: 15%;
+        padding-top: 10px;
+        margin-left: 0;
+        content: "";
+        border-bottom: 5px solid $colour-green;
+      }
     }
 
     h4 {
