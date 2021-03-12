@@ -10,15 +10,16 @@ Clone repository then :
 
 Required and implemented Website Skills :
 
-[X] pages are responsive and mobile first designed
-[X] no framework, javascript or css are used - no styles are hardcoded in HTML
-[X] HTML + SASS + CSS only
-[X] designed for last 2 most recent browsers version
-[X] color chart is as required
-[X] fonts are used as required
-[X] all animation and graphics are implemented
-[X] all pages are linted with W3C HTML5 and CSS without errors
-[X] all pages are optimized to score more than 90 with Google LightHouse (Performance, Accessibility, Best Practices, SEO)
+- [X] pages are responsive and mobile first designed
+- [X] no javascript or css frameworks are used - no styles are hardcoded in HTML
+- [X] HTML + SASS + CSS only
+- [X] designed for last 2 most recent browsers versions
+- [X] color chart is as required
+- [X] fonts are used as required
+- [X] pages are designed as in given sketches
+- [X] all animations and graphics are implemented
+- [X] all pages are linted with W3C HTML5 and CSS without errors
+- [X] all pages are optimized to score more than 90 with Google LightHouse (Performance, Accessibility, Best Practices, SEO) - not required but done.
 
 
 W3C linters and Google LightHouse reports :
